@@ -8,7 +8,7 @@
             <title>Test page</title>
       </head>
       <body>
-            <button onclick='window.open("test_popup.php", "Feedback", "status=0,scrollbars=1,width=300,height=500,menubar=no,toolbar=no")' hidden id="test"></button>
+            <button onclick='window.open("test_popup.php", "Feedback", "status=0,scrollbars=1,width=300,height=500,left="+(document.documentElement.clientWidth-300)+",menubar=no,toolbar=no")' hidden id="test"></button>
             <a href="https://meet.google.com/sor-tikh-baq" target="_blank">Link</a>
 
             <script>
