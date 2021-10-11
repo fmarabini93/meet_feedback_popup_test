@@ -12,29 +12,29 @@
             <h4>Come valuti la lezione?</h4>
             <form class="rating">
                   <label>
-                        <input type="radio" name="stars" value="1" onchange="getRating(this)" />
+                        <input type="radio" name="stars" value="1" onchange="getLessonRating(this)" />
                         <span class="icon">★</span>
                   </label>
                   <label>
-                        <input type="radio" name="stars" value="2" onchange="getRating(this)" />
+                        <input type="radio" name="stars" value="2" onchange="getLessonRating(this)" />
                         <span class="icon">★</span>
                         <span class="icon">★</span>
                   </label>
                   <label>
-                        <input type="radio" name="stars" value="3" onchange="getRating(this)" />
-                        <span class="icon">★</span>
-                        <span class="icon">★</span>
-                        <span class="icon">★</span>   
-                  </label>
-                  <label>
-                        <input type="radio" name="stars" value="4" onchange="getRating(this)" />
-                        <span class="icon">★</span>
+                        <input type="radio" name="stars" value="3" onchange="getLessonRating(this)" />
                         <span class="icon">★</span>
                         <span class="icon">★</span>
                         <span class="icon">★</span>
                   </label>
                   <label>
-                        <input type="radio" name="stars" value="5" onchange="getRating(this)" />
+                        <input type="radio" name="stars" value="4" onchange="getLessonRating(this)" />
+                        <span class="icon">★</span>
+                        <span class="icon">★</span>
+                        <span class="icon">★</span>
+                        <span class="icon">★</span>
+                  </label>
+                  <label>
+                        <input type="radio" name="stars" value="5" onchange="getLessonRating(this)" />
                         <span class="icon">★</span>
                         <span class="icon">★</span>
                         <span class="icon">★</span>
@@ -45,29 +45,29 @@
             <h4>Come valuti il tutor?</h4>
             <form class="rating">
                   <label>
-                        <input type="radio" name="stars" value="1" onchange="getRating(this)" />
+                        <input type="radio" name="stars" value="1" onchange="getTutorRating(this)" />
                         <span class="icon">★</span>
                   </label>
                   <label>
-                        <input type="radio" name="stars" value="2" onchange="getRating(this)" />
+                        <input type="radio" name="stars" value="2" onchange="getTutorRating(this)" />
                         <span class="icon">★</span>
                         <span class="icon">★</span>
                   </label>
                   <label>
-                        <input type="radio" name="stars" value="3" onchange="getRating(this)" />
-                        <span class="icon">★</span>
-                        <span class="icon">★</span>
-                        <span class="icon">★</span>   
-                  </label>
-                  <label>
-                        <input type="radio" name="stars" value="4" onchange="getRating(this)" />
-                        <span class="icon">★</span>
+                        <input type="radio" name="stars" value="3" onchange="getTutorRating(this)" />
                         <span class="icon">★</span>
                         <span class="icon">★</span>
                         <span class="icon">★</span>
                   </label>
                   <label>
-                        <input type="radio" name="stars" value="5" onchange="getRating(this)" />
+                        <input type="radio" name="stars" value="4" onchange="getTutorRating(this)" />
+                        <span class="icon">★</span>
+                        <span class="icon">★</span>
+                        <span class="icon">★</span>
+                        <span class="icon">★</span>
+                  </label>
+                  <label>
+                        <input type="radio" name="stars" value="5" onchange="getTutorRating(this)" />
                         <span class="icon">★</span>
                         <span class="icon">★</span>
                         <span class="icon">★</span>
@@ -76,11 +76,16 @@
                   </label>
             </form>
             <h4>Lascia un commento:</h4>
-            <textarea name="" id="" cols="50" rows="4"></textarea>
+            <textarea id="comment" cols="50" rows="4"></textarea>
+            <br>
+            <input type="submit">
 
             <script>
-                  function getRating(el) {
-                        console.log(el.value);
+                  function getLessonRating(el) {
+                        console.log('Current lesson rating is: ' + el.value);
+                  }
+                  function getTutorRating(el) {
+                        console.log('Current tutor rating is: ' + el.value);
                   }
             </script>
       </body>
